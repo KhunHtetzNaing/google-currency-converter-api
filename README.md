@@ -29,3 +29,5 @@ http://www.nationsonline.org/oneworld/currencies.htm
 
 Get PHP Code Here
 https://github.com/KhunHtetzNaing/google-currency-converter-api/blob/master/currency-converter.php
+
+Simple Android application using this json output => https://github.com/KhunHtetzNaing/Files/releases/download/May/uCurrencyConverter.apk
