@@ -11,8 +11,9 @@ Request လုပ္တဲ့အခါ Parameters သုံးခုလိုအ
 Amount , From Currency, To Currency ပါ။
 
 နမူနာ
-app.htetznaing.com/currency-converter/index.php?a=AMOUNT_HERE&from=FROM_HERE&to=TO_HERE
-eg. app.htetznaing.com/currency-converter/index.php?a=1&from=USD&to=MMK
+https://app.htetznaing.com/currency-converter/index.php?a=AMOUNT_HERE&from=FROM_HERE&to=TO_HERE
+
+eg. https://app.htetznaing.com/currency-converter/index.php?a=1&from=USD&to=MMK
 
 ကမာၻ႔ႏိုင္ငံအလိုက္ေငြေၾကးဆိုင္ရာ Currency Codes ေတြကို
 ေအာက္ပါလင့္ကေနေလ့လာႏိုင္ပါတယ္။
