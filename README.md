@@ -26,3 +26,6 @@ eg. https://app.htetznaing.com/currency-converter/index.php?a=1&from=USD&to=MMK
 ကမာၻ႔ႏိုင္ငံအလိုက္ေငြေၾကးဆိုင္ရာ Currency Codes ေတြကို
 ေအာက္ပါလင့္ကေနေလ့လာႏိုင္ပါတယ္။
 http://www.nationsonline.org/oneworld/currencies.htm
+
+Get PHP Code Here
+https://github.com/KhunHtetzNaing/google-currency-converter-api/blob/master/currency-converter.php
