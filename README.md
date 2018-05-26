@@ -1,5 +1,6 @@
 # google-currency-converter-api
 This is simple currency converter base on google search
+
 API ေတြထုတ္ေပးထားတဲ့ Currecy Converter ေတြထက္ Google မွာထြက္လာတဲ့
 အေျဖကိုပိုၿပီးသေဘာက်လို႔ အခုလိုမ်ိဳးေလးရတဲ့နည္းလမ္းနဲ႔ေရးလိုက္တာပါ။
 ဒီနည္းလမ္းဟာမွန္ကန္တဲ့နည္းလမ္းမဟုတ္ေပမယ့္
