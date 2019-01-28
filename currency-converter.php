@@ -1,10 +1,13 @@
 <?php
+error_reporting(0);
+
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['a']) && isset($_GET['from']) && isset($_GET['to'])) {
 $a = $_GET['a'];
 $from = $_GET['from'];
 $to = $_GET['to'];
 $html = google_currency_conversion($a,$from,$to);
 $classname = 'J7UKTe';
-$dom = new DOMDocument;
+$dom = new DOMDocument();
 $dom->loadHTML($html);
 $xpath = new DOMXPath($dom);
 $results = $xpath->query("//*[@class='" . $classname . "']");
@@ -40,5 +43,8 @@ function google_currency_conversion($amount, $from_currency, $to_currency){
 	  $buffer = curl_exec($cSession);
 	  curl_close($cSession);
 	  return $buffer ;
-	}		
+}		
+}else{
+    echo 'error';
+}
 ?>
