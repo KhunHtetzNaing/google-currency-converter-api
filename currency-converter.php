@@ -1,6 +1,17 @@
 <?php
 error_reporting(0);
 
+function google_currency_conversion($amount, $from_currency, $to_currency){
+	$url = 'https://www.google.com/search?q='.$amount.'+' . $from_currency . '+to+' . $to_currency;
+	$cSession = curl_init();
+	  curl_setopt($cSession, CURLOPT_URL, $url);
+	  curl_setopt($cSession, CURLOPT_RETURNTRANSFER, true);	  
+	  curl_setopt($cSession, CURLOPT_SSL_VERIFYPEER, false);  
+	  $buffer = curl_exec($cSession);
+	  curl_close($cSession);
+	  return $buffer ;
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['a']) && isset($_GET['from']) && isset($_GET['to'])) {
 $a = $_GET['a'];
 $from = $_GET['from'];
@@ -34,16 +45,6 @@ $myJSON = json_encode($myObj);
 echo $myJSON;
 }
 
-function google_currency_conversion($amount, $from_currency, $to_currency){
-	$url = 'https://www.google.com/search?q='.$amount.'+' . $from_currency . '+to+' . $to_currency;
-	$cSession = curl_init();
-	  curl_setopt($cSession, CURLOPT_URL, $url);
-	  curl_setopt($cSession, CURLOPT_RETURNTRANSFER, true);	  
-	  curl_setopt($cSession, CURLOPT_SSL_VERIFYPEER, false);  
-	  $buffer = curl_exec($cSession);
-	  curl_close($cSession);
-	  return $buffer ;
-}		
 }else{
     echo 'error';
 }
